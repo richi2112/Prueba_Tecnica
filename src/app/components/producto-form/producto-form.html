@@ -1,0 +1,20 @@
+<h2>Nuevo Producto</h2>
+
+<form (ngSubmit)="guardar()">
+
+  <label>Nombre:</label>
+  <input type="text" [(ngModel)]="producto.nombre" name="nombre" required>
+
+  <br><br>
+
+  <label>Precio:</label>
+  <input type="number" [(ngModel)]="producto.precio" name="precio" required>
+
+  <br><br>
+
+  <label>Fecha:</label>
+  <input type="datetime-local" [(ngModel)]="producto.fechaCreacion" name="fechaCreacion" required>
+
+  <button type="submit">Guardar</button>
+
+</form>
